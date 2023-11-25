@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMDemo.Views.Operaciones">
+    <ContentPage.Content>
+        <StackLayout Padding="29">
+
+            <Label Text="Calculadora"></Label>
+
+            <Entry Placeholder="Ingrese valor 1"
+                   Text="{ Binding Valor1}"
+                   ></Entry>
+            <Entry Placeholder="Ingrese valor 2"
+                   Text="{ Binding Valor2}"
+                   ></Entry>
+           
+            <Button Text="Sumar" BackgroundColor="Pink" 
+                    Command="{Binding Sumar}"
+                    ></Button>
+            <Label Text="{ Binding ResultadoSuma}" FontAttributes="Bold"/>
+          
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
